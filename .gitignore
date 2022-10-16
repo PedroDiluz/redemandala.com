@@ -1,0 +1,27 @@
+#ignore tudo na raiz, com exceção da pasta "wp-content"
+/*
+/*/
+!.gitignore
+!README.md
+!wp-content/
+
+#ignore tudo na pasa "wp-content", com exceção das pastas "themes" e "plugins"
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+
+#ignore esse temas
+wp-content/themes/twenty*
+#ignore esses plugins
+wp-content/plugins/hello.php
+wp-content/plugins/akismet*
+
+#ignore logs e bases de dados
+*.log
+*.sql
+*.sqlite
+
+.htaccess
+wp-config.php
+sitemap.xml
+sitemap.xml.gz
